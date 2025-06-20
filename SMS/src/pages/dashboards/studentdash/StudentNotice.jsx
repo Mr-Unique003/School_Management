@@ -1,0 +1,55 @@
+import React, { useEffect, useState } from "react";
+import StudentLayout from "../../layout/studentlayout/StudentLayout";
+import "./StudentNotice.css"; // Import CSS file
+
+const StudentNotice = () => {
+  const [notices, setNotices] = useState([]);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const fetchNotices = async () => {
+        try {
+            const response = await fetch("http://localhost:3002/notice/student");
+            const data = await response.json();
+            console.log("Fetched notices:", data); // Debugging
+            if (response.ok) {
+                setNotices(data);
+            } else {
+                setError(data.error || "Failed to fetch notices.");
+            }
+        } catch (err) {
+            setError("Error fetching notices.");
+        }
+    };
+
+    fetchNotices();
+}, []);
+
+  return (
+    <StudentLayout>
+      <div className="notice-container">
+        <h2 className="notice-title"> Student Notices</h2>
+        {error && <p className="error-message">{error}</p>}
+        {notices.length === 0 ? (
+          <p className="no-notices">No notices available.</p>
+        ) : (
+          <ul className="notice-list">
+              {notices.map((notice) => (
+                  <li key={notice._id} className="notice-item">
+                      <h3 className="notice-heading">{notice.title}</h3>
+
+                      {notice.fileUrl && (
+                          <p>
+                              📄 <a href={notice.fileUrl} target="_blank" rel="noopener noreferrer">View</a>
+                          </p>
+                      )}
+                  </li>
+              ))}
+          </ul>
+        )}
+      </div>
+    </StudentLayout>
+  );
+};
+
+export default StudentNotice;

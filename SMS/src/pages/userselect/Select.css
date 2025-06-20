@@ -1,0 +1,136 @@
+.userselect_wrapper
+{
+    height: 100vh;
+
+}
+/* Full-screen layout */
+.userselect_wrapper {
+    height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #3a7bd5, #00c6ff);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+  
+  /* Animation */
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+.select_wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+   
+   
+}
+.select_wrapper a{
+    
+    
+    text-decoration: none;
+    color: white;
+    
+}
+.select_bttn{
+   display: inline-flex;
+   padding: 12px;
+   color: white;
+}
+.select_bttn button
+{
+    height: 180px;
+    width: 130px;
+    max-width:100%;
+    padding: 12px;
+    cursor: pointer;
+    background-color: rgb(5, 17, 105);
+    border-radius: 12px;
+    border-color: transparent;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.select_bttn button:hover{
+    background-color: #0869d1;
+    transition:1s;
+    color: white;
+    transform: matrix3d();
+}
+/* Floating shapes container */
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  /* Individual shapes */
+  .floating-shapes span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: float 20s linear infinite;
+    bottom: -150px;
+  }
+  
+  /* Random positions and sizes */
+  .floating-shapes span:nth-child(1) {
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    animation-duration: 15s;
+  }
+  .floating-shapes span:nth-child(2) {
+    left: 30%;
+    animation-duration: 12s;
+  }
+  .floating-shapes span:nth-child(3) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 20s;
+  }
+  .floating-shapes span:nth-child(4) {
+    left: 70%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 18s;
+  }
+  .floating-shapes span:nth-child(5) {
+    left: 90%;
+    animation-duration: 22s;
+  }
+  
+  /* Animation keyframes */
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-1000px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  

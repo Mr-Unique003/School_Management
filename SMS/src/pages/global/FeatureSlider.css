@@ -1,0 +1,45 @@
+/* Feature Slider CSS */
+.feature-slider-container {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    background: radial-gradient(#1c1031 0%, #0e0b1b 100%); 
+  }
+  
+  .feature-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Arial;
+  }
+  
+  .feature-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .feature-card {
+    min-width: 100px;
+    box-shadow: #0e0b1b;
+    background:rgba(255, 255, 255, 0.1);
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }

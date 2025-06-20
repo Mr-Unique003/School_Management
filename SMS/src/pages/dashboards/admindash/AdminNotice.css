@@ -1,0 +1,71 @@
+/* AdminNotice.css */
+
+/* Styling for the notice container */
+.ANotice {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Title */
+.ANotice h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+.ANotice input,
+.ANotice textarea,
+.ANotice select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Textarea height adjustment */
+.ANotice textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Select dropdown */
+.ANotice select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.ANotice button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ANotice button:hover {
+    background-color: #0056b3;
+}
+
+/* Message Styling */
+.message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #d4edda;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}

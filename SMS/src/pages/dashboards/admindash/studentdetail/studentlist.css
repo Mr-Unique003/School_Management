@@ -1,0 +1,139 @@
+/* Container to hold sidebar + main content */
+.student_container {
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Content inside AdminLayout should take the remaining width */
+.student_container .admin-content {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 20px;
+}
+.search-filter-container{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.head
+{
+  
+  margin-left: 170px;
+  
+}
+/* Make only the heading big */
+.head p {
+  font-size: 2.5rem;        /* Big heading */
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Function container: normal size inputs/selects */
+.top_function {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+
+}
+
+/* Normal sized search input */
+.top_function input[type="text"] {
+  
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 250px;
+  transition: 0.3s ease;
+}
+
+.top_function input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+/* Normal select dropdowns */
+.top_function select {
+ 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.top_function select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+
+/* Scrollable table wrapper */
+.studentTable {
+  overflow-x: auto;
+}
+
+/* Table styling */
+table {
+  width: 88%;
+  margin-left: 170px;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures cells don't stretch too much */
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  word-break: break-word;
+  white-space: normal;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Actions */
+.function {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn.cancel {
+  background-color: #dc3545;
+}
+
+.btn.update {
+  background-color: #28a745;
+}
+
+.read {
+  color: #ff3300;
+}
+
+.delete {
+  color: #dc3545;
+}
+
+/* Make inputs fit inside cells */
+td input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+}

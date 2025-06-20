@@ -1,0 +1,139 @@
+.sidebar {
+  width: 150Px; /* Fixed width */
+  height: 100vh; /* Full viewport height */
+  background-color: #107e53; /* Dark background */
+  color: rgb(159, 184, 157); 
+  position: fixed; /* Keeps it fixed on the left */
+  top: 0;
+  left: 0;
+  padding: 2px;
+  padding-left: 10px;
+  overflow-y: auto; /* Allows scrolling if needed */
+  font-family: monospace;
+  font-size: 15px;
+  
+}
+.sidebar a{
+  color: rgb(159, 184, 157); 
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebar a:hover
+{
+  background-color: #6a806f;
+  color:white;
+  border-radius: 5px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+}
+
+
+.dropdown 
+{
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+ 
+}
+
+.sidebar li {
+  padding: 10px ;
+}
+
+.sidebar li a {
+  color: rgb(159, 184, 157);
+  text-decoration: none;
+ 
+  display: block;
+  padding: 10px;
+}
+
+.sidebar li a:hover {
+  
+  background-color: #5b8b63;
+  border-radius: 5px;
+}
+
+/* Main content area */
+.dashboard-container {
+  display: flex;
+}
+.drop
+{
+  list-style: none;
+  padding:2px;
+}
+.drop li a:hover {
+  background-color: #34495e;
+  border-radius: 2px;
+}
+.drop li
+{
+  padding: 0.5px;
+}
+.dashboard-content {
+  margin-left: 250px; /* Push content to the right */
+  padding: 20px;
+  width: calc(100% - 250px); /* Fill remaining space */
+  overflow-y: auto;
+}
+/* DropdownStyles.css */
+
+/* Container for the dropdown */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* The toggle button */
+.dropdown-toggle {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* The dropdown menu (initially hidden) */
+.dropdown-menu {
+  display: none;  /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  pointer-events: none;  /* Prevent interactions when hidden */
+  transition: opacity 2s ease, transform 2s ease;
+  transform: translateY(-10px);
+}
+
+/* Show dropdown when 'open' class is added */
+.dropdown-menu.open {
+  display: block;  /* Make dropdown visible */
+  opacity: 1;  /* Fully visible */
+  transform: translateY(0);  /* Reset translate to show */
+  pointer-events: auto;  /* Allow interaction */
+}
+
+/* Style the list items in the dropdown */
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}

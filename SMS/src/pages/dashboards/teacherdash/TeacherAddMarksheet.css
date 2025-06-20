@@ -1,0 +1,88 @@
+/* TeacherAddMarksheet.css */
+
+.AddMarksheet {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #eaf3fc, #dce8f7);
+    height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .AddMarksheet h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #2a5dba;
+  }
+  
+  .AddMarksheet .message {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #e63946;
+  }
+  
+  .AddMarksheet form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .AddMarksheet input[type="text"],
+  .AddMarksheet input[type="number"],
+  .AddMarksheet select {
+    padding: 12px 15px;
+    border: 1px solid #d0d7e2;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .AddMarksheet input:focus,
+  .AddMarksheet select:focus {
+    border-color: #2a5dba;
+  }
+  
+  .AddMarksheet label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+  }
+  
+  .AddMarksheet div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .AddMarksheet button[type="submit"] {
+    padding: 12px;
+    background-color: #2a5dba;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AddMarksheet button[type="submit"]:hover {
+    background-color: #1e45a5;
+  }
+  
+  @media (max-width: 600px) {
+    .AddMarksheet {
+      padding: 20px;
+    }
+  
+    .AddMarksheet h2 {
+      font-size: 24px;
+    }
+  }
+  

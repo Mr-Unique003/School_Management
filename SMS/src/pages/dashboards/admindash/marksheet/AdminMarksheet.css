@@ -1,0 +1,68 @@
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; /* Change this from 60% to 90% */
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    text-align: center;
+    overflow: hidden;
+}
+
+.marksheet-table {
+    width: 100%; /* Ensure the table fits within the modal */
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures equal column widths */
+}
+
+.marksheet-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    overflow-y: auto; /* Prevent horizontal scrollbars */
+}
+
+.modal-content th, .modal-content td {
+    /* margin-right: 50px; */
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    word-wrap: break-word; /* Ensure long words wrap */
+    overflow-wrap: break-word; /* Alternative wrapping */
+    max-width: 200px; /* Adjust width to fit within modal */
+    white-space: nowrap; /* Prevent too long texts from stretching table */
+}
+
+.marksheet-modal table {
+    width: 100%; /* Ensure table fits within modal */
+    max-width: 100%; /* Prevent it from overflowing */
+    margin-right: 160px;
+}
+
+.marksheet-modal th,
+.marksheet-modal td {
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.modal-content button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px; /* Ensuring button fits */
+    align-self: center; /* Center button */
+}

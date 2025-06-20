@@ -1,0 +1,277 @@
+@font-face {
+    font-family: Arial;
+    src: url('../../assets/Aloevera-OVoWO.ttf');
+}
+
+.navbar{
+
+  position: sticky;
+  
+  background: radial-gradient(circle at center, #1c1031 0%, #0e0b1b 100%);
+  display: flex;
+  justify-content: space-between; /* This ensures the content is spaced out */
+ 
+  font-family: sans-serif;
+  color: white;
+}
+.navbar a{
+  text-decoration: none;
+  color:white;
+}
+
+.navbar_logo{
+    display: flex;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding-left: 2%;
+    color:rgb(207, 219, 41);
+}
+.navbar_logo h1{
+  color: yellow;
+}
+
+.wrap{width:100%;}
+.gradient-text{
+  font-family:var(--fontSNormal);
+  background: linear-gradient(to right, rgb(126, 112, 115),rgb(192, 219, 255),rgb(0, 0, 0));
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgb(255, 255, 255);
+  font-size:1.2rem;
+  width:80vw;
+  
+  display:block;
+  text-align:center;
+  transition: color .2s ease-in-out;
+  text-transform:uppercase;
+  font-weight:900;
+  padding: 13px 12px;
+}
+.gradient-text:hover{
+  color:rgba(0,0,0,0);
+}
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+.navbar_link{
+  display: flex;
+    font-size: 20px;
+    font-weight: 0;
+    
+    
+    
+    
+}
+
+.navbar_link-container{
+  display: flex;
+    list-style: none;
+    
+    
+
+    
+}
+.navbar_link-container li{
+  transition: color 0.3s ease;
+}
+
+.navbar_link-container li{
+  padding: 0% 0% 0% 0%;
+}
+.navbar_login-container{
+    display: flex;
+    flex-direction: column;
+}
+.navbar_login-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.navbar_link a
+{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-family: Arial, sans-serif;
+}
+.navbar_link-container a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar_link-container a:hover::after {
+  width: 100%;
+}
+.navbar_login-btn-container{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.navbar_logo-img{
+    height: 60px;
+    /* width: 60px; */
+}
+
+  /* Animation keyframes */
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  
+  @-webkit-keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  @keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  /* Styles for anchor tags */
+  /* a {
+    color: #fefffe;
+  }
+   */
+  /* Styles for button-container-1 */
+  .login-btn-container {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    
+    /* overflow: hidden; */
+    /* border: 1px solid; */
+    font-family: var(--fonts1);
+    font-weight: 300;
+    font-size: 18px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background-color: #fff;
+  }
+  
+  /* Button styles for button-container-1 */
+  .login-btn-container button {
+    width: 100%;
+    height: 100%;
+    font-family: var(--fonts1);
+    font-weight: bold; /* Corrected duplication */
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #000000; /* Background color */
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png"); /* Mask image */
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png"); /* Mask image */
+    -webkit-mask-size: 2300% 100%; /* Mask size */
+    mask-size: 2300% 100%; /* Mask size */
+    border: none; /* Border style */
+    color: #ffffff; /* Text color */
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+  
+  /* Hover styles for button-container-1 button */
+  .login-btn-container button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  }
+  
+.glow-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #a777e3;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.glow-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 10.01%);
+    background-size: 10px 10px;
+    animation: pulse 2s infinite;
+    opacity: 0.5;
+  }
+  
+  .glow-button:hover {
+    box-shadow: 0 0 20px #a777e3, 0 0 30px #a777e3;
+    transform: scale(1.05);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
+  .login
+  {
+    
+    padding:2% ;
+    
+    
+  }
+  
+ 
